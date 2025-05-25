@@ -1,24 +1,11 @@
 # Suspicious Activity Detection in Retail using YOLOv8 and Gemini Pro Multimodal AI
 
----
-
+ 
 ## 📖 Overview  
 This project implements a **smart retail surveillance system** to detect suspicious activities such as shoplifting using advanced **object detection** and **multimodal AI analysis**. The system processes video frames from retail environments to identify people and objects, then uses behavioral analysis powered by **Gemini Pro** multimodal AI to flag potentially suspicious actions — helping retailers enhance store security and reduce theft.
 
----
-
-## 🛠️ Tech Stack  
-- 🚀 **YOLOv8** — Real-time object detection model for people, handbags, backpacks, etc.  
-- 🤖 **Gemini Pro Multimodal AI** — Natural language-based behavioral analysis from visual data.  
-- 🐍 **Python** — Core scripting language.  
-- 🎥 **OpenCV** — Video frame extraction and image processing.  
-
----
-
 ## 🧩 Problem Statement  
 Retail theft leads to significant financial losses globally. Traditional CCTV surveillance demands extensive manual monitoring which is error-prone and resource-intensive. Automating suspicious activity detection in real-time can assist security teams by providing timely alerts and reducing false alarms.
-
----
 
 ## 💡 Solution  
 - Extract video frames from retail store footage.  
@@ -27,14 +14,16 @@ Retail theft leads to significant financial losses globally. Traditional CCTV su
 - Flag suspicious activities and save relevant frames for review.  
 - Provide detailed natural language behavior summaries for enhanced understanding.
 
----
+## 🛠️ Tech Stack  
+- 🚀 **YOLOv8** — Real-time object detection model for people, handbags, backpacks, etc.  
+- 🤖 **Gemini Pro Multimodal AI** — Natural language-based behavioral analysis from visual data.  
+- 🐍 **Python** — Core scripting language.  
+- 🎥 **OpenCV** — Video frame extraction and image processing.  
 
 ## 🧠 AI Models & Techniques Used
 ✅ YOLOv8 (Fine-Tuned) Object detection trained on custom retail surveillance dataset. Trained to detect multiple objects and complex poses (like reaching into shelves). `shoplifting` treated as a high-level visual pattern label.
 
 ✅ Gemini Pro Vision (Multimodal LLM) takes visual input (frame) + prompt. Infers behavior using visual cues (posture, interaction, obscurity, eye direction). Adds human-like reasoning to camera feeds.
-
----
 
 ## 🚀 Workflow
 ````
@@ -63,15 +52,13 @@ Retail theft leads to significant financial losses globally. Traditional CCTV su
    - Suspicious frames are saved to 'flagged_frames/' for human review.
 
 ````
----
-
+ 
 ## 🎯 Benefits  
 - ⏱️ **Real-time detection** for immediate intervention.  
 - 👁️ **Reduced manual effort** for security staff.  
 - 🎯 **Improved accuracy** by combining object detection and AI behavioral analysis.  
 - ⚙️ **Scalable and extensible** design for future upgrades.
 
----
 ## 📂 Repository Structure 
 ```
 smart-retail-surveillance/
@@ -92,7 +79,7 @@ smart-retail-surveillance/
 ├── requirements.txt              
 └── README.md                     
 ```
----
+ 
 ## 🚀 Setup Instructions
 
 1. **Clone the repository:**
@@ -117,8 +104,6 @@ pip install -r requirements.txt
 5. **Configure API access for Gemini Pro**  
    Set up any required API keys or credentials for Gemini Pro multimodal AI. Refer to your environment or Gemini Pro documentation for details.
 
----
-
 ## 📖 Usage Instructions
 
 Run the main script to process image frames and analyze for suspicious behavior:
@@ -137,15 +122,11 @@ python suspicious_activity_detector.py
   - Behavior analysis summary
   - Flagging status per frame
 
----
-
 ## 🖼️ Input
 
 - Input should be image frames extracted from retail store surveillance videos.
 - Directory: `resources/input`
 - Supported formats: `.jpg`, `.png`, etc.
-
----
 
 ## 📤 Output
 
@@ -155,8 +136,6 @@ python suspicious_activity_detector.py
   - Object detection results
   - Behavior interpretation
   - Frame status (Flagged/Not Flagged)
-
----
 
 ## 🔮 Future Work
 
